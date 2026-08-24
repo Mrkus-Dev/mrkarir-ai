@@ -1,0 +1,69 @@
+# Environment dan konfigurasi rahasia
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+
+# Kunci, sertifikat, dan kredensial
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_rsa.pub
+
+# Dependensi
+/vendor/
+/node_modules/
+
+# Database runtime
+*.sqlite
+*.sqlite3
+*.db
+*.db-shm
+*.db-wal
+/storage/database/*
+!/storage/database/.gitkeep
+
+# Cache, log, session, dan upload lokal
+/storage/cache/*
+!/storage/cache/.gitkeep
+/storage/logs/*
+!/storage/logs/.gitkeep
+/storage/sessions/*
+!/storage/sessions/.gitkeep
+/storage/uploads/*
+!/storage/uploads/.gitkeep
+*.log
+
+# File hasil pengujian
+.phpunit.result.cache
+/coverage/
+.pytest_cache/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Cloudflare/Wrangler lokal
+.wrangler/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistem operasi
+.DS_Store
+Thumbs.db
+
+# File sementara dan cadangan
+/tmp/
+*.tmp
+*.temp
+*.bak
